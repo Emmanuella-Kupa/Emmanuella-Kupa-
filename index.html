@@ -5,107 +5,186 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Emmanuella Kupa</title>
     <style>
+        /* General Styling */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            color: #333;
-            background-color: #f4f4f4;
-        }
-        header {
-            background: #0073b1;
+            background: linear-gradient(to bottom, #2c3e50, #34495e);
             color: white;
-            padding: 20px 10%;
+        }
+
+        header {
             text-align: center;
+            padding: 50px 10px;
+            background: linear-gradient(90deg, #0073b1, #005580);
+            color: white;
         }
+
         header h1 {
-            margin: 0;
+            font-size: 2.5em;
+            margin-bottom: 20px;
         }
+
+        header .typing-text {
+            font-size: 1.2em;
+            color: #f4f4f4;
+        }
+
         nav {
-            margin: 20px 10%;
             display: flex;
-            justify-content: space-around;
-            font-size: 1.1em;
+            justify-content: center;
+            padding: 10px;
+            background: #34495e;
+            position: sticky;
+            top: 0;
+            z-index: 10;
         }
+
         nav a {
             text-decoration: none;
-            color: #0073b1;
+            color: white;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border: 1px solid transparent;
+            transition: 0.3s;
         }
+
+        nav a:hover {
+            border: 1px solid white;
+            border-radius: 5px;
+        }
+
         section {
-            margin: 20px 10%;
-            padding: 20px;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 50px 10%;
         }
+
         h2 {
-            margin-top: 0;
-            color: #0073b1;
+            text-align: center;
+            margin-bottom: 20px;
         }
+
+        /* Cards for Education and Work Experience */
+        .card {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            padding: 20px;
+            background: #2c3e50;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            width: 80px;
+            height: 80px;
+            margin-right: 20px;
+        }
+
+        .card-content {
+            flex: 1;
+        }
+
+        .card-content h3 {
+            margin: 0;
+        }
+
         footer {
             text-align: center;
-            padding: 10px 0;
-            background: #0073b1;
+            padding: 20px;
+            background: #2c3e50;
             color: white;
         }
-        .resume-link a {
-            color: #0073b1;
-            text-decoration: none;
+
+        /* Contact Form */
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .contact-form button {
+            padding: 10px 20px;
+            background: #0073b1;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .contact-form button:hover {
+            background: #005580;
         }
     </style>
 </head>
 <body>
     <header>
         <h1>Emmanuella Kupa</h1>
-        <p>Welcome to my professional portfolio. I am a highly dedicated and enthusiastic Business Administration and Accounting student from Niagara College, striving for excellence and growth in every opportunity.</p>
+        <p class="typing-text"></p> <!-- This will hold the typing effect -->
     </header>
     <nav>
-        <a href="#about">About Me</a>
-        <a href="#resume">Resume</a>
+        <a href="#about">About</a>
         <a href="#education">Education</a>
         <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
     </nav>
     <section id="about">
         <h2>About Me</h2>
-        <p>I am pursuing an associate degree in Business Administration and Accounting from Niagara College. With a strong foundation in accounting principles, interpersonal skills, and teamwork, I am committed to achieving academic and professional excellence in a cross-cultural environment.</p>
-    </section>
-    <section id="resume">
-        <h2>Resume</h2>
-        <p class="resume-link"><a href="resume.pdf" download>Download My Resume</a></p>
+        <p>I am a passionate Business Administration and Accounting student striving for excellence in every endeavor. With strong interpersonal skills and a commitment to growth, I am eager to contribute to professional projects and learning experiences.</p>
     </section>
     <section id="education">
         <h2>Education</h2>
-        <p><strong>Institution:</strong> Niagara College, Niagara, ON</p>
-        <p><strong>Program:</strong> Associate Degree in Business Administration & Accounting (Co-op) (2023–2026)</p>
-        <p><strong>Relevant Coursework:</strong> Financial Accounting, Management Cost Accounting, Spreadsheet (Excel), Marketing, Organizational Behavior, Statistics, Business Reports</p>
-        <p><strong>Awards:</strong> English Academic Preparation Scholarship (2022 & 2023) - $3,500</p>
+        <div class="card">
+            <img src="niagara-logo.png" alt="Niagara College Logo">
+            <div class="card-content">
+                <h3>Niagara College, Niagara, ON</h3>
+                <p>Associate Degree in Business Administration & Accounting</p>
+                <p>2023–2026</p>
+            </div>
+        </div>
     </section>
     <section id="experience">
-        <h2>Experience</h2>
-        <ul>
-            <li><strong>Coach - Tapestry | Sales Associate III (Permanent Part-time)</strong> (2024–Present) - Assisted consumers with a successful shopping experience and managed inventory.</li>
-            <li><strong>Rawbank | Fintech Intern</strong> (2021–2023) - Contributed to the IllicoCash banking app and conducted customer training sessions.</li>
-            <li><strong>CTC | Corporate Digital Customer Service Representative (Bilingual)</strong> (2023) - Provided exceptional customer support in English and French.</li>
-            <li><strong>George Tax Solution | Junior Accountant Co-op Internship</strong> (2024) - Prepared financial statements and optimized accounting procedures.</li>
-        </ul>
-    </section>
-    <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li><strong>Budget Planning Tool:</strong> Developed an Excel-based tool for financial planning in small businesses.</li>
-            <li><strong>Market Analysis Report:</strong> Conducted market research on consumer trends for a class project.</li>
-        </ul>
+        <h2>Work Experience</h2>
+        <div class="card">
+            <img src="coach-logo.png" alt="Coach Tapestry Logo">
+            <div class="card-content">
+                <h3>Coach - Tapestry</h3>
+                <p>Sales Associate III (Permanent Part-Time)</p>
+                <p>2024–Present</p>
+            </div>
+        </div>
     </section>
     <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:Kupaemmanuella@gmail.com">Kupaemmanuella@gmail.com</a></p>
-        <p>Phone: 289-823-2943</p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/emmanuella-kupa-92590822b/" target="_blank">Emmanuella Kupa</a></p>
+        <h2>Contact Me</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="4" required></textarea>
+            <button type="submit">Send</button>
+        </form>
     </section>
     <footer>
         <p>&copy; 2024 Emmanuella Kupa. All rights reserved.</p>
     </footer>
+    <script>
+        // Typing Effect JavaScript
+        const text = "Welcome to my portfolio! A dedicated Business Administration and Accounting student at Niagara College.";
+        const typingText = document.querySelector('.typing-text');
+        let index = 0;
+
+        function typeEffect() {
+            if (index < text.length) {
+                typingText.textContent += text.charAt(index);
+                index++;
+                setTimeout(typeEffect, 50); // Typing speed
+            }
+        }
+
+        typeEffect(); // Start the typing effect
+    </script>
 </body>
 </html>
