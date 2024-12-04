@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Emmanuella Kupa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #0073b1;
+            color: white;
+            padding: 20px 10%;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            margin: 20px 10%;
+            display: flex;
+            justify-content: space-around;
+            font-size: 1.1em;
+        }
+        nav a {
+            text-decoration: none;
+            color: #0073b1;
+        }
+        section {
+            margin: 20px 10%;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            margin-top: 0;
+            color: #0073b1;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #0073b1;
+            color: white;
+        }
+        .resume-link a {
+            color: #0073b1;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Emmanuella Kupa</h1>
+        <p>Welcome to my professional portfolio. I am a highly dedicated and enthusiastic Business Administration and Accounting student from Niagara College, striving for excellence and growth in every opportunity.</p>
+    </header>
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#resume">Resume</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am pursuing an associate degree in Business Administration and Accounting from Niagara College. With a strong foundation in accounting principles, interpersonal skills, and teamwork, I am committed to achieving academic and professional excellence in a cross-cultural environment.</p>
+    </section>
+    <section id="resume">
+        <h2>Resume</h2>
+        <p class="resume-link"><a href="resume.pdf" download>Download My Resume</a></p>
+    </section>
+    <section id="education">
+        <h2>Education</h2>
+        <p><strong>Institution:</strong> Niagara College, Niagara, ON</p>
+        <p><strong>Program:</strong> Associate Degree in Business Administration & Accounting (Co-op) (2023–2026)</p>
+        <p><strong>Relevant Coursework:</strong> Financial Accounting, Management Cost Accounting, Spreadsheet (Excel), Marketing, Organizational Behavior, Statistics, Business Reports</p>
+        <p><strong>Awards:</strong> English Academic Preparation Scholarship (2022 & 2023) - $3,500</p>
+    </section>
+    <section id="experience">
+        <h2>Experience</h2>
+        <ul>
+            <li><strong>Coach - Tapestry | Sales Associate III (Permanent Part-time)</strong> (2024–Present) - Assisted consumers with a successful shopping experience and managed inventory.</li>
+            <li><strong>Rawbank | Fintech Intern</strong> (2021–2023) - Contributed to the IllicoCash banking app and conducted customer training sessions.</li>
+            <li><strong>CTC | Corporate Digital Customer Service Representative (Bilingual)</strong> (2023) - Provided exceptional customer support in English and French.</li>
+            <li><strong>George Tax Solution | Junior Accountant Co-op Internship</strong> (2024) - Prepared financial statements and optimized accounting procedures.</li>
+        </ul>
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li><strong>Budget Planning Tool:</strong> Developed an Excel-based tool for financial planning in small businesses.</li>
+            <li><strong>Market Analysis Report:</strong> Conducted market research on consumer trends for a class project.</li>
+        </ul>
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:Kupaemmanuella@gmail.com">Kupaemmanuella@gmail.com</a></p>
+        <p>Phone: 289-823-2943</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/emmanuella-kupa-92590822b/" target="_blank">Emmanuella Kupa</a></p>
+    </section>
+    <footer>
+        <p>&copy; 2024 Emmanuella Kupa. All rights reserved.</p>
+    </footer>
+</body>
+</html>
